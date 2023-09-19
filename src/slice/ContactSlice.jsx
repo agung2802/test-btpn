@@ -5,7 +5,7 @@ const initialState = {
   contactDetail: {}, 
   createContact: {}, 
   updateContact: {}, 
-  isUpdateDone: false, 
+  isUpdateDone: true, 
   isCreateDone: false, 
   isDeleteDone: false,
   modalNotif: {}
