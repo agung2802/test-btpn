@@ -4,4 +4,5 @@
 
 body {
     background-color: #fffaff;
+    overflow: scroll;
 }

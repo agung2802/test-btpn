@@ -19,7 +19,7 @@ function App() {
 
 function Header(){
   return <h1 className="text-3xl font-bold text-center text-white w-full fixed h-12 z-10" style={{backgroundColor: "#3e92cc"}}>
-    Hello world!
+    List Contact
   </h1>;
 }
 

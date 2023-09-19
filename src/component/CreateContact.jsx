@@ -103,7 +103,7 @@ export default function CreateContact() {
                 </div>
                     <div className="modal-footer">
                         <button className="btn btn-secondary" data-bs-dismiss="modal" onClick={() => resetValue()}>Close</button>
-                        <button className="btn text-white" data-bs-dismiss="modal"  style={{backgroundColor: "#0a2463"}} onClick={() => handleSubmit()}>Save changes</button>
+                        <button className="btn text-white" data-bs-dismiss="modal"  style={{backgroundColor: "#0a2463"}} onClick={() => handleSubmit()}>Save</button>
                     </div>
                 </div>
             </div>

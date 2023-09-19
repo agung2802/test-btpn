@@ -1,5 +1,5 @@
 import { useDispatch, useSelector} from 'react-redux'
-import { setModalNotif, updateModel } from '../slice/ContactSlice';
+import { setModalNotif, updateFlagAction, updateModel } from '../slice/ContactSlice';
 import axios from 'axios';
 import NotificationService from './notification/notificationService';
 
@@ -11,11 +11,11 @@ export default function UpdateContact() {
         axios.put(`https://contact.herokuapp.com/contact/${contact.id}`, {
             firstName: contact.firstName,
             lastName: contact.lastName,
-            age: contact.age,
+            age: parseInt(contact.age),
             photo: contact.photo
         })
         .then(response => {
-            dispatch(deleteFlagAction(true));
+            dispatch(updateFlagAction(true));
             dispatch(setModalNotif({
                 message: "Delete contact success!!",
                 response: "success"

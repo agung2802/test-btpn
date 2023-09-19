@@ -49,7 +49,7 @@ export default function ListContact() {
 
             <div className="flex flex-wrap justify-center">
             {contact.map((res) => (
-                <div className="w-72 p-3 mb-2">
+                <div className="w-72 p-3 mb-2" id="card">
                     <div className="card shadow-xl shadow-slate-400 cursor-pointer" onClick={() => setContactDetail(res.id)}  data-bs-toggle="modal" data-bs-target="#detailModal">
                         <img src={res.photo} className="card-img-top h-60" style={{backgroundColor: "#3e92cc"}} alt="..."></img>
                         <div className="card-body text-center">
